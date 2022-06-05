@@ -1,0 +1,14 @@
+<div class="row justify-content-center pt-2">
+  <div class="col-auto">
+    <button class="btn btn-success" (click)="random()">Random</button>
+  </div>
+  <div class="col-auto">
+    <button class="btn btn-danger" (click)="clean()">Clean</button>
+  </div>
+</div>
+<div class="row justify-content-center" *ngIf="monstrarLista.length > 0">
+  <div class="col-2" *ngFor="let record of monstrarLista;let i = index" style="background: {{color(record.elemeto)}}">
+    <img src="{{record.foto}}">
+    {{i}}: {{record.nombre}}
+  </div>
+</div>
