@@ -9,6 +9,6 @@
 <div class="row justify-content-center" *ngIf="monstrarLista.length > 0">
   <div class="col-2 mx-2" *ngFor="let record of monstrarLista;let i = index" style="background: {{color(record.elemeto)}}">
     <img src="{{record.foto}}">
-    {{i}}: {{record.nombre}}
+    {{i+1}}: {{record.nombre}}
   </div>
 </div>
